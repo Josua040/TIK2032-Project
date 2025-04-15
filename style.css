@@ -1,0 +1,117 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Navigasi */
+nav {
+    background-color: #007bff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+
+/* Section */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+section h1 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Blog */
+article {
+    margin-bottom: 30px;
+}
+
+article h2 {
+    color: #0056b3;
+}
+
+article p {
+    margin: 10px 0;
+}
+
+article a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+#contact p {
+    margin: 10px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full screen tinggi */
+    background-color: #e0f0ff;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+#home h1 {
+    font-size: 4rem; /* lebih besar */
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#home p {
+    font-size: 2rem; /* lebih besar juga */
+    color: #444;
+}
+
