@@ -16,9 +16,13 @@
     </nav>
 
     <section id="home">
-        <h1>Selamat Datang di Website Sederhana</h1>
-        <p>Ini adalah halaman utama.</p>
+        <h1>Hi, I'm NANDO</h1>
+        <h3>Informatics Engineering Student</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </section>
+    
+    
 
     <section id="gallery">
         <h1>Gallery</h1>
@@ -32,28 +36,44 @@
     </section>
 
     <section id="blog">
-        <h1>Blog</h1>
-        <article>
-            <h2>Perkembangan E-Sport di Indonesia: Dari Hobi Menjadi Profesi</h2>
-            <p>E-sport kini bukan hanya sekadar hobi, melainkan telah berkembang menjadi industri besar yang membuka banyak peluang karier, terutama di Indonesia.</p>
-            <a href="https://www.kompas.com/skola/read/2021/08/19/200000769/perkembangan-e-sport-di-indonesia">Baca selengkapnya</a>
-        </article>
-        <article>
-            <h2>Tips dan Strategi Menjadi Pro Player Mobile Legends</h2>
-            <p>Mobile Legends adalah salah satu game e-sport terpopuler. Artikel ini membahas tips latihan, manajemen waktu, dan strategi komunikasi tim untuk menjadi pemain profesional.</p>
-            <a href="https://duniagames.co.id/discover/article/cara-menjadi-pro-player-mobile-legends">Baca selengkapnya</a>
-        </article>
-        <article>
-            <h2>Turnamen E-Sport Dunia: Kejuaraan yang Mengubah Hidup</h2>
-            <p>Turnamen besar seperti The International (Dota 2) dan Worlds (LoL) tidak hanya menawarkan hadiah miliaran rupiah, tapi juga mengubah hidup para pemainnya secara drastis.</p>
-            <a href="https://www.esports.net/news/top-10-esports-tournaments-in-the-world/">Baca selengkapnya</a>
-        </article>
-    </section>    
+        <h1>Blog E-Sport</h1>
+        <div class="blog-container">
+            <article class="blog-card">
+                <h2>Perkembangan E-Sport di Indonesia</h2>
+                <p>E-sport kini bukan hanya sekadar hobi, melainkan telah berkembang menjadi industri besar yang membuka banyak peluang karier, terutama di Indonesia.</p>
+                <a href="https://www.kompas.com/skola/read/2021/08/19/200000769/perkembangan-e-sport-di-indonesia" target="_blank">Baca Selengkapnya →</a>
+            </article>
+            <article class="blog-card">
+                <h2>Tips Menjadi Pro Player Mobile Legends</h2>
+                <p>Mobile Legends adalah salah satu game e-sport terpopuler. Artikel ini membahas tips latihan, manajemen waktu, dan strategi komunikasi tim untuk menjadi pemain profesional.</p>
+                <a href="https://duniagames.co.id/discover/article/cara-menjadi-pro-player-mobile-legends" target="_blank">Baca Selengkapnya →</a>
+            </article>
+            <article class="blog-card">
+                <h2>Turnamen E-Sport Dunia</h2>
+                <p>Turnamen besar seperti The International dan Worlds tidak hanya menawarkan hadiah miliaran rupiah, tapi juga mengubah hidup para pemainnya secara drastis.</p>
+                <a href="https://www.esports.net/news/top-10-esports-tournaments-in-the-world/" target="_blank">Baca Selengkapnya →</a>
+            </article>
+        </div>
+    </section>
+        
 
     <section id="contact">
-        <h1>Contact</h1>
-        <p>Email: fernandothadius@student.unsrat.ac.id</p>
-        <p>Telepon: 085254441702</p>
-    </section>
-</body>
+        <h1>Contact Me</h1>
+        <form id="contactForm" class="contact-form">
+          <div class="input-group">
+            <input type="text" id="name" required placeholder=" ">
+            <label for="name">Your Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" required placeholder=" ">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-group">
+            <textarea id="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit">Send Message</button>
+          <p id="confirmation"></p>
+        </form>
+      </section>      
 </html>

@@ -7,8 +7,8 @@
 
 body {
     line-height: 1.6;
-    background-color: #f0f4f8;
-    color: #333;
+    background-color: #006dac; 
+    color: #fff;            
     margin: 0;
     padding: 0; 
 }
@@ -47,10 +47,9 @@ section {
 }
 
 section h1 {
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 15px;
 }
-
 
 .gallery-container {
     display: grid;
@@ -81,7 +80,7 @@ article {
 }
 
 article h2 {
-    color: #0056b3;
+    color: #ffffff;
 }
 
 article p {
@@ -97,11 +96,9 @@ article a:hover {
     text-decoration: underline;
 }
 
-
 #contact p {
     margin: 10px 0;
 }
-
 
 #navbar {
     position: fixed;
@@ -130,14 +127,167 @@ article a:hover {
 }
 
 #navbar a:hover {
-    color: #ffc107;
+    color: #07b9ff;
 }
 
-.fixed-image {
-    object-fit: cover;
-    object-position: top;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+/* BAGIAN HOME YANG DITINGKATKAN */
+#home h1 {
+    font-size: 3rem;
+    color: #ffc107;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+#home h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+#home p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    color: #ffffff;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#blog h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.blog-card {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.blog-card h2 {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    color: #ccc;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.blog-card a {
+    color: #00d9ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff0a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 14px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff12;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #ccc;
+    pointer-events: none;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: 5px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #ffc107;
+    background-color: transparent;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #ffc107;
+    color: #1c1c1c;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e0a800;
+}
+
+#confirmation {
+    margin-top: 10px;
+    text-align: center;
+    color: #00ffcc;
+    font-weight: bold;
 }
