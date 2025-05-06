@@ -7,10 +7,10 @@
 
 body {
     line-height: 1.6;
-    background-color: #006dac; 
-    color: #fff;            
+    background-color: #1e1e2f;
+    color: #fff;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 html {
@@ -32,7 +32,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffc107;
+    color: #ffcc00;
 }
 
 section {
@@ -241,7 +241,7 @@ article a:hover {
     padding: 14px 12px;
     border: none;
     border-radius: 8px;
-    background: #ffffff12;
+    background: #2c2c3a;
     color: #fff;
     font-size: 1rem;
     outline: none;
@@ -253,7 +253,7 @@ article a:hover {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    color: #ccc;
+    color: #aaa;
     pointer-events: none;
     transition: 0.3s;
     background-color: transparent;
