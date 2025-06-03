@@ -1,3 +1,4 @@
+<?php include 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -38,25 +39,19 @@
     <section id="blog">
         <h1>Blog E-Sport</h1>
         <div class="blog-container">
+            <?php
+            $result = $conn->query("SELECT * FROM blog_posts ORDER BY id DESC");
+            while ($row = $result->fetch_assoc()):
+            ?>
             <article class="blog-card">
-                <h2>Perkembangan E-Sport di Indonesia</h2>
-                <p>E-sport kini bukan hanya sekadar hobi, melainkan telah berkembang menjadi industri besar yang membuka banyak peluang karier, terutama di Indonesia.</p>
-                <a href="https://www.kompas.com/skola/read/2021/08/19/200000769/perkembangan-e-sport-di-indonesia" target="_blank">Baca Selengkapnya →</a>
+                <h2><?= htmlspecialchars($row['title']) ?></h2>
+                <p><?= htmlspecialchars($row['content']) ?></p>
+                <a href="<?= htmlspecialchars($row['link']) ?>" target="_blank">Baca Selengkapnya →</a>
             </article>
-            <article class="blog-card">
-                <h2>Tips Menjadi Pro Player Mobile Legends</h2>
-                <p>Mobile Legends adalah salah satu game e-sport terpopuler. Artikel ini membahas tips latihan, manajemen waktu, dan strategi komunikasi tim untuk menjadi pemain profesional.</p>
-                <a href="https://duniagames.co.id/discover/article/cara-menjadi-pro-player-mobile-legends" target="_blank">Baca Selengkapnya →</a>
-            </article>
-            <article class="blog-card">
-                <h2>Turnamen E-Sport Dunia</h2>
-                <p>Turnamen besar seperti The International dan Worlds tidak hanya menawarkan hadiah miliaran rupiah, tapi juga mengubah hidup para pemainnya secara drastis.</p>
-                <a href="https://www.esports.net/news/top-10-esports-tournaments-in-the-world/" target="_blank">Baca Selengkapnya →</a>
-            </article>
+            <?php endwhile; ?>
         </div>
     </section>
         
-
     <section id="contact">
         <h1>Contact Me</h1>
         <form id="contactForm" class="contact-form">
